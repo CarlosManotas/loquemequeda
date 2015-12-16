@@ -1,0 +1,90 @@
+header{
+	width:100vw;
+	height: 100vh;
+	min-height: 480px;
+}
+#formulario{
+	width: 100%;
+	height: 80vh;
+	min-height: 480px;
+	max-width: 600px;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	input{
+		width:100%;
+		line-height: 2.5;
+		border-radius: 5px;
+		padding-left: 2em;
+		border: 1px solid #d3d3d3; 
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 98% 50%;
+		transition: all .5s;
+	}
+	input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0; 
+	}
+	input[type=number] {
+		-moz-appearance:textfield;
+	}
+	input[data-icon="sueldo"]{
+		background-image: url(../img/sueldo.png);
+	}
+	input[data-icon="visa"]{
+		background-image: url(../img/visa.png);
+	}
+	input[data-icon="master"]{
+		background-image: url(../img/master.png);
+	}
+	input[data-icon="alquiler"]{
+		background-image: url(../img/alquiler.png);
+	}
+	input[data-icon="expensas"]{
+		background-image: url(../img/expensas.png);
+	}
+	input[data-icon="internet"]{
+		background-image: url(../img/internet.png);
+	}
+	input[data-icon="compra$"]{
+		background-image: url(../img/compra$.png);
+	}
+	input[data-icon="adicionales"]{
+		background-image: url(../img/adicionales.png);
+	}
+
+}
+figure{
+	margin:0 auto;
+	border-radius: 50%;
+	overflow:hidden;
+	background: peru;
+	max-width:400px;
+	max-height:400px; 
+	min-height:319px;
+	min-width: 319px;
+}
+.resultado{
+	h2{
+		background: red;
+		color:white;
+		line-height: 4;
+		span{
+			font-size: .8em;
+			position: relative;
+			top:-.2em;
+		}
+	}
+}
+	
+button{
+	margin: 1.5em auto;
+	text-align: center;
+	background: rgba(0,0,0,.2); 
+	border:1px solid #ededed;
+	color:white;
+}

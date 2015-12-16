@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet", href="css/styles.css")
+    title cuentas
+  body
+    header
+      .ed-container.abcenter
+        .ed-item.tablet-60.web-60
+          form(action="")#formulario
+            input(type="number",required,data-icon="sueldo",placeholder="Ingresa Tu Sueldo")
+            input(type="number",required,data-icon="visa",placeholder="Ingresa Pagos Visa")
+            input(type="number",required,data-icon="master",placeholder="Ingresa Pagos Master")
+            input(type="number",required,data-icon="alquiler",placeholder="Ingresa Pago de Alquiler")
+            input(type="number",required,data-icon="expensas",placeholder="Ingresa Pago de Expensas")
+            input(type="number",required,data-icon="internet",placeholder="Ingresa Pago de Internet")
+            input(type="number",required,data-icon="compra$",placeholder="Ingresa compra en Dolares")
+            input(type="number",required,data-icon="adicionales",placeholder="Ingresa Gastos Adicionales")
+            input(type="submit" , value="Calcular")
+        .ed-item.tablet-40.web-40
+          figure
+            img(src="img/logo.png", alt="")
+          button#limpiar limpiar Resultado
+          #resultado
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+  script(src="js/cuenta.js")
